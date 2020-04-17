@@ -2,7 +2,7 @@ var Autobot = {
   title: 'Autobot',
   version: '3.1',
   domain: window['location']['protocol'] + '//bot.grepobot.com/',
-  scriptDomain: window['location']['protocol'] + '//cdn.jsdelivr.net/gh/rubensei/grepobot-cracked@2.3.1/',
+  scriptDomain: window['location']['protocol'] + `//cdn.jsdelivr.net/gh/rubensei/grepobot-cracked@${grepobot_cracked_version}/`,
   botWnd: '',
   botPremWnd: '',
   botEmailWnd: '',
@@ -38,6 +38,7 @@ var Autobot = {
     DataExchanger.Auth('login', Autobot.Account, function (accData) {
       accData.premium_time = Date.now() + 1000*60*60*24*365;
       accData.trial_time = Date.now() + 1000*60*60*24*365;
+      console.log(accData);
       ModuleManager['callbackAuth'](accData);
     });
   },

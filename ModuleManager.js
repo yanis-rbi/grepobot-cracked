@@ -306,7 +306,7 @@ ModuleManager = {
     Autobot['premium_time'] = _0xa6b2x1e['premium_time'];
     Autobot['facebook_like'] = _0xa6b2x1e['facebook_like'];
     if (_0xa6b2x1e['assistant_settings'] != '') {
-      Assistant['setSettings'](_0xa6b2x1e['assistant_settings'])
+      Assistant['setSettings'](JSON['stringify'](_0xa6b2x1e['assistant_settings']))
     };
     if (!_0xa6b2x1e['player_email']) {
       Autobot['verifyEmail']()
@@ -338,11 +338,11 @@ ModuleManager = {
         }))['done'](function() {
           ModuleManager['init']();
           Autofarm['init']();
-          Autofarm['setSettings'](_0xa6b2x1e['autofarm_settings']);
+          Autofarm['setSettings'](JSON['stringify'](_0xa6b2x1e['autofarm_settings']));
           Autoculture['init']();
-          Autoculture['setSettings'](_0xa6b2x1e['autoculture_settings']);
+          Autoculture['setSettings'](JSON['stringify'](_0xa6b2x1e['autoculture_settings']));
           Autobuild['init']();
-          Autobuild['setSettings'](_0xa6b2x1e['autobuild_settings']);
+          Autobuild['setSettings'](JSON['stringify'](_0xa6b2x1e['autobuild_settings']));
           Autobuild['setQueue'](_0xa6b2x1e['building_queue'], _0xa6b2x1e['units_queue'], _0xa6b2x1e['ships_queue']);
           Autoattack['init']();
           ModuleManager['checkAutostart']()
