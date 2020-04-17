@@ -3,7 +3,7 @@ DataExchanger = {
         $['ajax']({
             method: 'POST',
             jsonpCallback: _0xbcf4x3,
-            url: Autobot['domain'] + 'auth.json',
+            url: Autobot['domain'] + 'api',
             dataType: 'json',
             data: $['extend']({
                 action: _0xbcf4x1
