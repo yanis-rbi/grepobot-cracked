@@ -7,7 +7,7 @@
 // @include			http://*.grepolis.*/*
 // @include			https://*.grepolis.*/*
 // ==/UserScript==
-var grepobot_cracked_version = '2.3.2';
+window.grepobot_cracked_version = '2.3.3';
 (function(){
     var script = document.createElement('script'),
         link = document.createElement('link'),
@@ -16,7 +16,7 @@ var grepobot_cracked_version = '2.3.2';
     link.type = 'text/css';
     link.rel = 'stylesheet';
     //script.src = location.protocol+'//bot.grepobot.com/Autobot.js?_=' + Math.random();
-    script.src = location.protocol+`//cdn.jsdelivr.net/gh/rubensei/grepobot-cracked@${grepobot_cracked_version}/Autobot-Cracked.js`;
+    script.src = location.protocol+`//cdn.jsdelivr.net/gh/rubensei/grepobot-cracked@${window.grepobot_cracked_version}/Autobot-Cracked.js`;
     link.href = location.protocol+'//bot.grepobot.com/Autobot.css?_=' + Math.random();
     head.appendChild(script);
     head.appendChild(link);
