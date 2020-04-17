@@ -343,7 +343,7 @@ ModuleManager = {
           Autoculture['setSettings'](JSON['stringify'](_0xa6b2x1e['autoculture_settings']));
           Autobuild['init']();
           Autobuild['setSettings'](JSON['stringify'](_0xa6b2x1e['autobuild_settings']));
-          Autobuild['setQueue'](_0xa6b2x1e['building_queue'], _0xa6b2x1e['units_queue'], _0xa6b2x1e['ships_queue']);
+          Autobuild['setQueue'](JSON['stringify'](_0xa6b2x1e['building_queue']), JSON['stringify'](_0xa6b2x1e['units_queue']), JSON['stringify'](_0xa6b2x1e['ships_queue']));
           Autoattack['init']();
           ModuleManager['checkAutostart']()
         })
