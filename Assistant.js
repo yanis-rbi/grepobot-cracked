@@ -10,7 +10,7 @@ Assistant = {
     },
     setSettings: function(_0x8bc3x1) {
         if (_0x8bc3x1 != '' && _0x8bc3x1 != null) {
-            $['extend'](Assistant['settings'], JSON['parse'](_0x8bc3x1))
+            $['extend'](Assistant['settings'], _0x8bc3x1)
         };
         Assistant['initSettings']()
     },
