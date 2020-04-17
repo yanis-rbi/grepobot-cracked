@@ -2,7 +2,7 @@ var Autobot = {
   title: 'Autobot',
   version: '3.1',
   domain: window['location']['protocol'] + '//bot.grepobot.com/',
-  scriptDomain: window['location']['protocol'] + `//cdn.jsdelivr.net/gh/rubensei/grepobot-cracked@${window.grepobot_cracked_version}/`,
+  scriptDomain: window['location']['protocol'] + `//cdn.jsdelivr.net/gh/rubensei/grepobot-cracked@2.3.4/`,
   botWnd: '',
   botPremWnd: '',
   botEmailWnd: '',
